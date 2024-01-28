@@ -1,0 +1,332 @@
+<!-- Some Hints : For sending HTML Emails, Please use the Free Thunderbird Software, in which, while composing a New Message, use the Insert Menu's HTML... Option, in the Message Body and then test sending a sample message, to your other email accounts, first, before circulating it largely to others. -->
+
+<!DOCTYPE html>
+<html>
+<title>HTML Basics With Important Tags</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+
+br { margin-top:1px; line-height:1px; }
+
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 0;
+  border-top: 5px solid green;
+}
+
+blockquote {
+  border-left: 4px solid green !important;
+  margin-left: 1.5rem !important;
+  padding-left: 1rem !important;
+  font-style: normal !important;
+  margin-bottom: 40px !important;
+}
+
+pre[class="highlight plaintext"], code {
+    background: #f5f2f0;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */  
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}  
+
+.auto-resizable-iframe {
+  max-width: 560px;
+  margin: 0px auto;
+}
+
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0px;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.imgbox {
+            display: grid;
+            height: 100%;
+        }
+
+.center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+
+</style>
+
+<body>
+
+<div class="w3-container w3-sand">
+
+<div class="w3-container w3-lime w3-content" style="width:90%">  
+
+<header class="w3-container w3-teal">
+  <h1>Header</h1>
+</header>
+
+
+   <br> 
+
+<p><strong>This is a Bold Line.</strong></p>
+
+   <br> 
+
+<p><em>This Line Will Get Displayed in Italics.</em></p>
+
+   <br> 
+
+<p><a href="https://example.com">This is a Link, that points to the example.com website.</a></p>
+
+   <br> 
+
+<p>The Following is a Numbered / Ordered List : </p>
+
+<ol>
+<li>Point 1</li>
+<li>Point 2</li>
+<li>Point 3</li>
+<li>Point 4
+
+<ul>
+<li>Unordered sub-list. </li>
+</ul>
+</li>
+</ol>
+
+   <br> 
+
+<p>The Following is a Bulleted / Unordered List : </p>
+
+<ul>
+<li>Point 1</li>
+<li>Point 2</li>
+<li>Point 3</li>
+<li>Point 4</li>
+</ul>
+
+   <br> 
+
+<p>Headings &amp; Their Font Sizes : </p>
+
+<h1>
+  <a name="heading-1" href="#heading-1">
+  </a>
+  Heading 1
+</h1>
+
+<h2>
+  <a name="heading-2" href="#heading-2">
+  </a>
+  Heading 2
+</h2>
+
+<h3>
+  <a name="heading-3" href="#heading-3">
+  </a>
+  Heading 3
+</h3>
+
+<h4>
+  <a name="heading-4" href="#heading-4">
+  </a>
+  Heading 4
+</h4>
+
+<h5>
+  <a name="heading-5" href="#heading-5">
+  </a>
+  Heading 5
+</h5>
+
+<h6>
+  <a name="heading-6" href="#heading-6">
+  </a>
+  Heading 6
+</h6>
+
+
+   <br> 
+
+<p>Blocks : </p> 
+
+<p>Paragraph Block. Now is the time for all good men to come to the aid of their country.</p> 
+
+<blockquote>
+<p>This is a Quote</p>
+</blockquote>
+
+   <br> 
+
+<p><code>This is a Single Line Code Preserving Everything Given Inside, without any modifications</code><br>
+</p>
+
+   <br> 
+
+<pre class="highlight plaintext"><code>This is a Multi Line Code 
+Preserving Everything Given Inside, without any modifications
+</code></pre>
+
+   <br> 
+
+<p>Embedding a Youtube Video : </p>
+
+<p>
+<div class="auto-resizable-iframe">
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/u_DJCebpmcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+</p>
+
+   <br> 
+
+<p>Embedding an Image : </p>
+
+<div class="imgbox">
+<p><img class="center-fit" src="https://i.imgur.com/PfO2WbQ.jpg" alt="My Image" loading="lazy"></p>
+</div>
+
+   <br> 
+
+<p><u>This is an Underlined Text.</u></p>
+
+   <br> 
+
+<p><del>This is a Strike through Line.</del></p>
+
+   <br> 
+
+<p>Following is a Horizontal Line Divider : </p>
+
+<hr>
+
+   <br> 
+
+<p>Line Breaks : </p>
+
+<p>Just add the <code>&lt;br&gt;</code> tag wherever required.</p>
+
+   <br> 
+
+<p>Adding Comments / Notes that are not displayed / action-ed upon by the Browser ( But Visible When the Source is Viewed ) : </p>
+
+<p><code>&lt;!-- A Commented Line For Our Notes --&gt;</code></p>
+
+   <br> 
+
+<p>Read More With Collapsible Content ( For Example : Frequently Asked Questions ) : </p>
+
+<p><details>
+  <summary>What is an FAQ page?</summary>
+
+   <br> 
+
+  <p>Frequently Asked Questions (FAQ) pages contain a list of commonly asked questions and answers on a website about topics such as hours, shipping and handling, product information, and return policies.</p>
+
+  <br>
+
+<p>It’s no secret that the best companies put their customers first. </p>
+
+  <br>
+
+<p>95% of consumers believe that a good customer experience is important to brand loyalty. Providing a top-notch customer experience can be expensive, time-consuming, and complicated to put into practice. </p>
+
+  <br>
+
+<p>Sure there are chatbots, support lines, and customer reviews to help shoppers on their path to purchase, but there’s one forgotten customer service tactic that is cost-effective and streamlined. That tactic is an FAQ page. </p>
+
+  <br>
+
+</details>
+</p>
+
+   <br> 
+
+<p>Tables : </p>
+
+<table>
+<thead>
+<tr>
+<td style="width:32.1456%;" scope="col">This is the header Row</td>
+<td style="width:32.1456%;" scope="col">This is the header Row</td>
+<td style="width:16.0728%;" scope="col">This is the header Row</td>
+<td style="width:16.0728%;" scope="col">This is the header Row</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width:32.1456%;">This is row 1</td>
+<td style="width:32.1456%;">This is row 1</td>
+<td style="width:16.0728%;">This is row 1</td>
+<td style="width:16.0728%;">This is row 1</td>
+</tr>
+<tr>
+<td style="width:32.1456%;">This is row 2</td>
+<td style="width:32.1456%;">This is row 2</td>
+<td style="width:16.0728%;">This is row 2</td>
+<td style="width:16.0728%;">This is row 2</td>
+</tr>
+</tbody>
+</table>
+
+   <br> 
+   <br> 
+
+<p>Alignment : </p>
+
+<p style="text-align:left;">Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left, Left,</p>
+<p style="text-align:right;">Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right,</p>
+<p style="text-align:center;">Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center, Center,</p>
+<p style="text-align:left;"> </p>
+<p style="text-align:center;">###</p>
+<p> </p>
+<p> </p>
+<p> </p>   
+
+   <br> 
+
+<p>Styles : </p>
+
+<p>Test of Plain text with <strong>Bold</strong>, <em>Italic</em>, <em><strong>Bold Italic</strong></em>, <span style="text-decoration:underline;">Underline</span>, <span style="text-decoration:underline;"><strong>Bold Underline</strong></span>, <span style="text-decoration:underline;"><em><strong>Bold Italic Underline</strong></em></span> in the same line.</p>
+
+<p>Test of <sup>Superscript</sup> and <sub>Subscript</sub> text</p>
+
+<p><span style="font-size:18pt;">This is 18 pt plain text</span></p>
+
+   <br> 
+
+<p>Colors : </p>
+
+<p><span style="color:red;font-size:18pt;">This is 18 pt plain text (in Red)</span></p>
+
+   <br> 
+   <br> 
+
+<footer class="w3-container w3-teal">
+  <h1>Footer</h1>
+</footer>
+
+</body>
+</html>
